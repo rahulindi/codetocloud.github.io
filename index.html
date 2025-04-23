@@ -1,44 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CodeToCloud – AWS DevOps Journey</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #f0f0f0;
+      padding: 2rem;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+      animation: slideDown 1s ease-out;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      color: #00ffcc;
+    }
+
+    p.tagline {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+      color: #a8dadc;
+    }
+
+    section {
+      margin-bottom: 3rem;
+      animation: fadeInUp 1s ease-in forwards;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #ffd166;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    a {
+      color: #00d9ff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    a:hover {
+      color: #ffafcc;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 4rem;
+      font-size: 0.9rem;
+      color: #cccccc;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
+
 <body>
   <header>
-    <h1>Welcome to CodeToCloud</h1>
-    <p><strong>AWS Enthusiast | DevOps Learner</strong></p>
+    <h1>CodeToCloud</h1>
+    <p class="tagline">AWS Enthusiast | DevOps Learner</p>
   </header>
-  
+
   <section>
     <h2>About Me</h2>
-    <p>Hello! I'm Rahul Indi, a passionate learner transitioning into the world of DevOps. I’m focusing on cloud-native practices, specifically AWS, CI/CD pipelines, Kubernetes, and containerization using Docker.</p>
-    <p>I’m currently building a project that simulates production-grade automation, where I use Terraform for infrastructure provisioning on AWS and Kubernetes (EKS) for container orchestration.</p>
+    <p>Hi, I'm Rahul Indi. I'm learning DevOps with a focus on AWS services and tools such as Terraform, Kubernetes, Docker, and Jenkins. I’m building real-world projects to showcase automation, CI/CD pipelines, and scalable architecture design.</p>
   </section>
 
   <section>
     <h2>My Projects</h2>
-    <p>Check out my journey and code repositories on GitHub:</p>
+    <p>I'm currently working on a microservices-based DevOps project:</p>
     <ul>
-      <li><a href="https://github.com/rahulindi/codetocloud.github.io/" target="_blank">GitHub Profile</a></li>
-      <li><a href="https://www.codetocloud.tech" target="_blank">Live Portfolio</a></li>
+      <li>CI/CD with Jenkins and GitHub Actions</li>
+      <li>Infrastructure as Code using Terraform</li>
+      <li>Deployment to AWS EKS with Helm</li>
+      <li>Monitoring using Prometheus and Grafana</li>
     </ul>
   </section>
 
   <section>
-    <h2>Contact</h2>
-    <p>Feel free to reach out to me via email:</p>
+    <h2>Connect With Me</h2>
     <ul>
-      <li><a href="mailto:rahulindi@codetocloud.tech">Email me</a></li>
+      <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/rahul-indi-b1932375/" target="_blank">Rahul Indi</a></li>
+      <li><strong>GitHub:</strong> <a href="https://github.com/rahulindi/codetocloud.github.io" target="_blank">github.com/rahul-indi</a></li>
+      <li><strong>Email:</strong> <a href="mailto:rahulindi@codetocloud.tech">rahul@codetocloud.tech</a></li>
     </ul>
   </section>
 
   <footer>
-    <p>Connect with me on LinkedIn:</p>
-    <ul>
-      <li><a href="https://www.linkedin.com/in/rahul-indi-b1932375/" target="_blank">LinkedIn Profile</a></li>
-    </ul>
+    <p>&copy; 2025 CodeToCloud.tech – Built with passion for AWS and DevOps 🚀</p>
   </footer>
 </body>
+
 </html>
