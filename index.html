@@ -1,127 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CodeToCloud – AWS DevOps Journey</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <title>Rahul Indi - DevOps & Cloud Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- AOS for scroll animations -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
-      font-family: 'Inter', sans-serif;
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-      color: #f0f0f0;
-      padding: 2rem;
-      animation: fadeIn 1.5s ease-in;
+      font-family: Arial, sans-serif;
+      scroll-behavior: smooth;
     }
-
-    header {
-      text-align: center;
-      margin-bottom: 3rem;
-      animation: slideDown 1s ease-out;
+    /* Hero Section */
+    #hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1667372459567-3853510dd5ce?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center;
+      background-size: cover;
+      color: white;
+      padding: 150px 0;
     }
-
-    h1 {
+    #hero h1 {
       font-size: 3rem;
-      font-weight: 800;
-      color: #00ffcc;
+      font-weight: bold;
     }
-
-    p.tagline {
-      font-size: 1.2rem;
-      margin-top: 0.5rem;
-      color: #a8dadc;
+    #hero p {
+      font-size: 1.5rem;
     }
-
+    #hero .btn {
+      padding: 10px 30px;
+      font-size: 1.1rem;
+    }
     section {
-      margin-bottom: 3rem;
-      animation: fadeInUp 1s ease-in forwards;
+      padding: 60px 0;
     }
-
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      color: #ffd166;
+    section h2 {
+      margin-bottom: 30px;
+      font-weight: 600;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 10px;
     }
-
-    ul {
-      list-style: none;
+    .tools-list li, .contact-list li {
+      margin-bottom: 10px;
+      font-size: 1.1rem;
     }
-
-    a {
-      color: #00d9ff;
-      text-decoration: none;
-      transition: color 0.3s;
+    .tools-icons img {
+      width: 50px;
+      margin: 10px;
     }
-
-    a:hover {
-      color: #ffafcc;
-    }
-
-    footer {
-      text-align: center;
-      margin-top: 4rem;
-      font-size: 0.9rem;
-      color: #cccccc;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes slideDown {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
+    /* Contact section styling */
+    #contact {
+      background: #f8f9fa;
     }
   </style>
 </head>
-
 <body>
-  <header>
-    <h1>CodeToCloud</h1>
-    <p class="tagline">AWS Enthusiast | DevOps Learner</p>
-  </header>
 
-  <section>
-    <h2>About Me</h2>
-    <p>Hi, I'm Rahul Indi. I'm learning DevOps with a focus on AWS services and tools such as Terraform, Kubernetes, Docker, and Jenkins. I’m building real-world projects to showcase automation, CI/CD pipelines, and scalable architecture design.</p>
+  <!-- Hero Section -->
+  <section id="hero" class="text-center">
+    <div class="container">
+      <h1 data-aos="fade-down">Rahul Indi</h1>
+      <p data-aos="fade-up" data-aos-delay="200">DevOps & Cloud Engineer</p>
+      <a href="#project" class="btn btn-primary mt-4" data-aos="zoom-in" data-aos-delay="400">View Project</a>
+    </div>
   </section>
 
-  <section>
-    <h2>End-to-End-Kubernetes-Three-Tier-DevSecOps-Project</h2>
-    <p>I'm currently working on a microservices-based DevOps project named End-to-End-Kubernetes-Three-Tier-DevSecOps-Project, also mentioned in my Github repo:</p>
-    <ul>
-      <li>CI/CD with Jenkins and GitHub Actions</li>
-      <li>Infrastructure as Code using Terraform</li>
-      <li>Deployment to AWS EKS with Helm</li>
-      <li>Monitoring using Prometheus and Grafana</li>
-    </ul>
+  <!-- About Section -->
+  <section id="about">
+    <div class="container" data-aos="fade-up">
+      <h2>About Me</h2>
+      <p>
+        I am a DevOps engineer passionate about cloud-native technologies and automation. With extensive experience in AWS and Kubernetes, I specialize in building scalable infrastructure and efficient CI/CD pipelines. As a Senior Analyst at CodeToCloud, I create solutions that bridge development and operations. This portfolio highlights an advanced three-tier Kubernetes project, showcasing my expertise in DevSecOps practices.
+      </p>
+    </div>
   </section>
 
-  <section>
-    <h2>Connect With Me</h2>
-    <ul>
-      <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/rahul-indi-b1932375/" target="_blank">Rahul Indi</a></li>
-      <li><strong>GitHub:</strong> <a href="https://github.com/rahulindi/codetocloud.github.io" target="_blank">github.com/rahul-indi</a></li>
-      <li><strong>Email:</strong> <a href="mailto:rahulindi@codetocloud.tech">rahul@codetocloud.tech</a></li>
-    </ul>
+  <!-- Project Overview Section -->
+  <section id="project">
+    <div class="container" data-aos="fade-up">
+      <h2>Project Overview</h2>
+      <p>
+        This project implements a Three-Tier Web Application (ReactJS frontend, NodeJS backend, and MongoDB) deployed on AWS Elastic Kubernetes Service (EKS)&#8203;:contentReference[oaicite:0]{index=0}. It is an advanced end-to-end DevSecOps solution incorporating infrastructure as code, continuous integration, delivery, and monitoring. The application is containerized and deployed via Kubernetes, ensuring high availability and scalability.
+      </p>
+      <p>
+        Key tools explored in the project include Terraform and AWS CLI for infrastructure provisioning, Jenkins and SonarQube for CI/CD automation and code quality, Helm and Prometheus for monitoring, and ArgoCD for GitOps practices&#8203;:contentReference[oaicite:1]{index=1}. The pipeline automates IAM user setup, EKS cluster creation, and load balancer configuration, with private ECR repositories for container images and Helm charts to deploy a robust monitoring stack&#8203;:contentReference[oaicite:2]{index=2}. This comprehensive setup demonstrates a full DevOps workflow from development to production deployment on Kubernetes.
+      </p>
+      <ul class="tools-list">
+        <li>Terraform & AWS CLI: Infrastructure as Code for AWS IAM and EKS setup&#8203;:contentReference[oaicite:3]{index=3}&#8203;:contentReference[oaicite:4]{index=4}</li>
+        <li>Jenkins & SonarQube: Automated CI/CD pipelines and code analysis&#8203;:contentReference[oaicite:5]{index=5}</li>
+        <li>Kubernetes (AWS EKS): Container orchestration for app deployment&#8203;:contentReference[oaicite:6]{index=6}</li>
+        <li>Helm & ArgoCD: GitOps-driven application and monitoring deployment</li>
+        <li>Prometheus & Grafana: Metrics collection and visualization for monitoring</li>
+      </ul>
+    </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 CodeToCloud.tech – Built with passion for AWS and DevOps 🚀</p>
-  </footer>
+  <!-- Tools & Stack Section -->
+  <section id="tools" class="text-center">
+    <div class="container" data-aos="fade-up">
+      <h2>Tools & Technology Stack</h2>
+      <p class="mb-4">The project leverages a cutting-edge DevOps toolchain covering CI/CD, infrastructure, and monitoring:</p>
+      <div class="row justify-content-center tools-icons">
+        <div class="col-4 col-sm-2">
+          <img src="https://get.jenkins.io/art/jenkins-logo/256x256/logo.png" alt="Jenkins">
+          <p>Jenkins</p>
+        </div>
+        <div class="col-4 col-sm-2">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg" alt="Kubernetes">
+          <p>Kubernetes</p>
+        </div>
+        <div class="col-4 col-sm-2">
+          <img src="https://cdn.pixabay.com/photo/2017/05/09/12/47/amazon-2297485_960_720.png" alt="AWS">
+          <p>AWS</p>
+        </div>
+        <div class="col-4 col-sm-2">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Prometheus_software.svg" alt="Prometheus">
+          <p>Prometheus</p>
+        </div>
+        <div class="col-4 col-sm-2">
+          <img src="https://www.sonarsource.com/images/press/sonarqube-logo-dark.svg" alt="SonarQube" style="width:60px;">
+          <p>SonarQube</p>
+        </div>
+        <div class="col-4 col-sm-2">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Grafana_logo.svg" alt="Grafana">
+          <p>Grafana</p>
+        </div>
+        <div class="col-4 col-sm-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/argocd/argocd-original.svg" alt="ArgoCD">
+          <p>ArgoCD</p>
+        </div>
+        <div class="col-4 col-sm-2">
+          <img src="https://www.terraform.io/assets/images/logo-hashicorp-terraform-0d2a76e0b48b8a5204ab0e46371644eb.svg" alt="Terraform" style="width:50px;">
+          <p>Terraform</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Architecture Diagrams / Screenshots Section -->
+  <section id="architecture">
+    <div class="container" data-aos="fade-up">
+      <h2>Architecture & Diagrams</h2>
+      <div class="text-center">
+        <p>&#8203;:contentReference[oaicite:7]{index=7}The architecture is based on a scalable three-tier design. The frontend React UI, backend API, and MongoDB database each run in separate Kubernetes deployments on AWS EKS. The diagram above conceptually represents the Kubernetes pods and services connecting the tiers. Below are screenshots and diagrams (from the project repository) illustrating the CI/CD pipeline, GitOps workflow, and monitoring dashboards used in this deployment.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container" data-aos="fade-up">
+      <h2>Contact</h2>
+      <ul class="contact-list list-unstyled">
+        <li>Email: <a href="mailto:rahulindi@codetocloud.tech">rahulindi@codetocloud.tech</a></li>
+        <li>Website: <a href="https://codetocloud.tech" target="_blank">codetocloud.tech</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/rahul-indi-b1932375/" target="_blank">Rahul Indi</a></li>
+        <li>GitHub: <a href="https://github.com/AmanPathak-DevOps/End-to-End-Kubernetes-Three-Tier-DevSecOps-Project" target="_blank">Project Repo</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- AOS Initialization and Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+  </script>
 </body>
-
 </html>
