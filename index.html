@@ -1,142 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Rahul Indi - DevOps Portfolio</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Google Font: Poppins -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <!-- AOS Animations CSS -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rahul | DevOps Portfolio</title>
   <style>
     body {
-      font-family: 'Poppins', sans-serif;
-      scroll-behavior: smooth;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9fafb;
+      color: #1f2937;
+      margin: 0;
+      padding: 0;
     }
-    .hero {
-      background: #f8f9fa;
-      padding: 100px 0;
+
+    header {
+      background-color: #111827;
+      color: white;
+      padding: 30px 20px;
       text-align: center;
     }
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
     }
-    .hero h2 {
-      font-size: 1.5rem;
-      color: #6c757d;
-    }
+
     section {
-      padding: 60px 0;
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
     }
-    footer {
+
+    h2 {
+      border-bottom: 3px solid #3b82f6;
+      display: inline-block;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+      font-size: 1.8em;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    a {
+      color: #3b82f6;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .footer {
+      background-color: #111827;
+      color: white;
       text-align: center;
-      padding: 20px 0;
-      background: #f1f1f1;
-      color: #6c757d;
+      padding: 15px 10px;
     }
   </style>
 </head>
 <body>
 
-  <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#hero">CodeToCloud.tech</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
-          <li class="nav-item"><a class="nav-link" href="#architecture">Architecture</a></li>
-          <li class="nav-item"><a class="nav-link" href="#tools">Tools</a></li>
-          <li class="nav-item"><a class="nav-link" href="#plan">Project Steps</a></li>
-          <li class="nav-item"><a class="nav-link" href="#connect">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <header id="hero" class="hero d-flex flex-column justify-content-center align-items-center">
-    <h1 data-aos="fade-up">Hi, I'm Rahul Indi</h1>
-    <h2 data-aos="fade-up" data-aos-delay="200">Aspiring DevOps Engineer | Passionate Cloud Enthusiast</h2>
+  <header>
+    <h1>Rahul Indi | DevOps Enthusiast</h1>
+    <p>Email: <a href="mailto:rahulindi@codetocloud.tech" style="color: #60a5fa;">rahulindi@codetocloud.tech</a> |
+       Website: <a href="https://codetocloud.tech" target="_blank" style="color: #60a5fa;">codetocloud.tech</a> |
+       <a href="https://www.linkedin.com/in/rahul-indi-b1932375/" target="_blank" style="color: #60a5fa;">LinkedIn</a>
+    </p>
   </header>
 
-  <!-- About Section -->
-  <section id="about" class="container" data-aos="fade-up">
+  <section>
     <h2>About Me</h2>
-    <p>i am actively learning DevOps methodologies and cloud-native practices.I am passionate about automating development workflows, specifically focusing on continuous integration and continuous deployment (CI/CD) in the cloud&#8203;:contentReference[oaicite:22]{index=22}.I aim to build scalable, secure pipelines that streamline software delivery using the latest DevOps tools.</p>
-  </section>
-
-  <!-- Tools Section -->
-  <section id="tools" class="bg-light" data-aos="fade-up">
-    <div class="container">
-      <h2>Tools & Technologies</h2>
-      <p>Rahul’s projects utilize a range of DevOps and cloud tools. Key technologies include:</p>
-      <ul>
-        <li><strong>AWS (EC2, EKS, S3, CloudFront)</strong> – for cloud infrastructure and Kubernetes hosting.</li>
-        <li><strong>Docker, Kubernetes</strong> – containerization and orchestration of the application’s tiers.</li>
-        <li><strong>Jenkins, SonarQube</strong> – for CI/CD automation and code quality scans.</li>
-        <li><strong>Prometheus, Grafana</strong> – for monitoring cluster and application performance.</li>
-        <li><strong>ArgoCD, Terraform</strong> – for GitOps continuous delivery and Infrastructure as Code.</li>
-        <li><strong>Git, GitHub</strong> – version control and repository hosting for code and pipelines.</li>
-      </ul>
-      <p>These tools form a modern DevSecOps stack&#8203;:contentReference[oaicite:23]{index=23}, used throughout Rahul’s project workflow.</p>
-    </div>
-  </section>
-
-  <!-- Architecture Section -->
-  <section id="architecture" class="container" data-aos="fade-up">
-    <h2>End-to-End DevSecOps Project Architecture</h2>
-    <p>The following diagram illustrates the architecture of my three-tier Kubernetes DevSecOps project. It was designed to deploy a production-grade, highly available web application with built-in CI/CD, security, and monitoring&#8203;:contentReference[oaicite:24]{index=24}.</p>
-    <div class="text-center">
-      <img src="https://images.unsplash.com/photo-1667984390527-850f63192709?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNjA1NzV8MHwxfHNlYXJjaHwxfHxjbG91ZCUyMGNvbXB1dGluZ3xlbnwwfHx8fDE2NzIwNzA1OTU&ixlib=rb-4.0.3&q=80" 
-           alt="Cloud Architecture Diagram" class="img-fluid" />
-    </div>
-  </section>
-
-  <!-- Project Steps Section -->
-  <section id="plan" class="bg-light" data-aos="fade-up">
-    <div class="container">
-      <h2>Project Execution Plan</h2>
-      <ul>
-        <li><strong>Infrastructure Provisioning:</strong> Use Terraform to provision AWS infrastructure&#8203;:contentReference[oaicite:25]{index=25}. Set up EC2 instances and create an EKS (Elastic Kubernetes Service) cluster. Also configure S3 buckets and CloudFront distributions for artifact storage and CDN if needed.</li>
-        <li><strong>Application Development:</strong> Develop a simple three-tier web application (frontend, backend, database). Containerize each component using Docker and push the images to Amazon ECR&#8203;:contentReference[oaicite:26]{index=26} for deployment.</li>
-        <li><strong>CI/CD Configuration:</strong> Install Jenkins on an EC2 instance to automate builds, tests, and deployment&#8203;:contentReference[oaicite:27]{index=27}. Create pipeline scripts (Jenkinsfiles) that include steps for building Docker images, running tests, and deploying to Kubernetes. Integrate SonarQube for automated code quality and security analysis.</li>
-        <li><strong>Application Deployment:</strong> Deploy the application to the Kubernetes cluster. Use Kubernetes manifest files or Helm charts for each service. Implement GitOps by using ArgoCD, which continuously applies changes from a Git repository to the cluster&#8203;:contentReference[oaicite:28]{index=28}.</li>
-        <li><strong>Monitoring & Logging:</strong> Integrate Prometheus to collect metrics from the cluster and application components&#8203;:contentReference[oaicite:29]{index=29}. Use Grafana to create dashboards and visualizations. Set up alert rules to notify in case of issues.</li>
-        <li><strong>Security Best Practices:</strong> Follow DevSecOps practices by integrating security scans into the pipeline&#8203;:contentReference[oaicite:30]{index=30}. For example, use SonarQube for vulnerability scanning. Store sensitive data securely in Kubernetes Secrets and use AWS IAM roles with least privilege.</li>
-        <li><strong>High Availability & Scaling:</strong> Configure Kubernetes Horizontal Pod Autoscalers (HPA) to auto-scale pods under load, and use an AWS ALB Ingress for load balancing. Deploy the cluster across multiple AZs for fault tolerance&#8203;:contentReference[oaicite:31]{index=31}.</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Connect/CTA Section -->
-  <section id="connect" class="container text-center" data-aos="fade-up">
-    <h2>Get in Touch</h2>
-    <p>Explore more of Rahul’s work or connect with him through the links below:</p>
     <p>
-      <a href="https://codetocloud.tech" class="btn btn-primary mx-2" target="_blank">Visit Website</a>
-      <a href="https://www.linkedin.com/in/rahul-indi-b1932375/" class="btn btn-primary mx-2" target="_blank">LinkedIn</a>
-      <a href="https://github.com/rahulindi/End-to-End-Kubernetes-Three-Tier-DevSecOps-Project" 
-         class="btn btn-primary mx-2" target="_blank">GitHub</a>
+      I am actively learning DevOps methodologies and cloud-native practices. I’m passionate about automating development workflows, with a strong focus on continuous integration and continuous deployment (CI/CD) in the cloud. My goal is to build scalable and secure pipelines that streamline software delivery using the latest DevOps tools.
     </p>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Code to Cloud | Designed by Rahul Indi</p>
-  </footer>
+  <section>
+    <h2>Tools & Technologies</h2>
+    <ul>
+      <li><strong>AWS</strong> (EC2, EKS, S3, CloudFront) – for cloud infrastructure and Kubernetes hosting</li>
+      <li><strong>Docker, Kubernetes</strong> – for containerization and orchestration</li>
+      <li><strong>Jenkins, SonarQube</strong> – for CI/CD automation and code quality analysis</li>
+      <li><strong>Prometheus, Grafana</strong> – for monitoring cluster and application performance</li>
+      <li><strong>ArgoCD, Terraform</strong> – for GitOps and Infrastructure as Code</li>
+      <li><strong>Git, GitHub</strong> – for version control and source code management</li>
+    </ul>
+  </section>
 
-  <!-- JavaScript: Bootstrap and AOS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+  <section>
+    <h2>End-to-End DevSecOps Project Architecture</h2>
+    <p>
+      This project showcases a full-stack Kubernetes-based three-tier application with CI/CD, security scanning, monitoring, and GitOps delivery—all deployed on AWS infrastructure.
+    </p>
+    <p>
+      View Architecture Diagram 👉 
+      <a href="https://raw.githubusercontent.com/rahulindi/End-to-End-Kubernetes-Three-Tier-DevSecOps-Project/main/assets/Architecture.png" target="_blank">
+        Click Here
+      </a>
+    </p>
+    <p>
+      GitHub Repository 👉 
+      <a href="https://github.com/rahulindi/End-to-End-Kubernetes-Three-Tier-DevSecOps-Project" target="_blank">
+        github.com/rahulindi/End-to-End-Kubernetes-Three-Tier-DevSecOps-Project
+      </a>
+    </p>
+  </section>
+
+  <div class="footer">
+    &copy; 2025 Rahul Indi | Built with 💻 & ☁️
+  </div>
+
 </body>
 </html>
