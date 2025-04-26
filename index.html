@@ -62,6 +62,11 @@
     }
     .contact-list a {
       text-decoration: none;
+      color: #0d6efd;
+    }
+    .highlight {
+      color: #FF0076;
+      font-weight: 600;
     }
   </style>
 </head>
@@ -71,36 +76,44 @@
   <section id="hero">
     <div class="container">
       <h1 data-aos="fade-down">Rahul Indi</h1>
-      <p data-aos="fade-up" data-aos-delay="200">Aspiring DevOps Engineer | Passionate Learner | Cloud & Automation Enthusiast</p>
+      <p data-aos="fade-up" data-aos-delay="200">DevOps Enthusiast | Cloud Engineer | DevSecOps Practitioner</p>
       <a href="#project" class="btn btn-primary mt-4" data-aos="zoom-in">View My Project</a>
     </div>
   </section>
 
   <!-- About -->
-  <section id="about" data-aos="fade-up">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>
-        I'm an IT professional currently transitioning into the DevOps space. With a strong background in application packaging and deployment, I’m now deeply focused on mastering modern DevOps tools and practices. I'm passionate about building cloud-native solutions, automating infrastructure, and implementing secure CI/CD pipelines using tools like Jenkins, Kubernetes, and AWS.
-      </p>
-    </div>
-  </section>
+  <section>
+  <h2>About Me</h2>
+  <p>
+    I am a DevOps enthusiast, actively building my expertise in cloud-native technologies, CI/CD pipelines, container orchestration, and automation tools. 
+    My passion lies in streamlining software delivery processes by embracing modern DevOps practices such as Infrastructure as Code, GitOps, security integration, and continuous monitoring.
+  </p>
+  <p>
+    Currently, I am focused on mastering tools like AWS, Kubernetes, Jenkins, Docker, Terraform, SonarQube, Prometheus, and Grafana. 
+    I am committed to developing scalable, secure, and automated DevOps solutions that can support real-world enterprise applications.
+  </p>
+</section>
+
 
   <!-- Project Overview -->
   <section id="project" data-aos="fade-up">
     <div class="container">
-      <h2>DevSecOps Project Overview</h2>
+      <h2>Three-Tier DevSecOps Implementation</h2>
       <p>
-        A full-stack three-tier web app deployed on AWS using EKS, Docker, and Terraform. Features:
+        <span class="highlight">End-to-End Kubernetes Project Features:</span>
       </p>
       <ul>
-        <li>Frontend: React.js | Backend: Node.js | Database: MongoDB</li>
-        <li>Infrastructure as Code with Terraform (IAM, VPC, EKS)</li>
-        <li>CI/CD pipeline using Jenkins, SonarQube, Docker, and Helm</li>
-        <li>Monitoring with Prometheus & Grafana, GitOps with ArgoCD</li>
-        <li>Static hosting using S3 + CloudFront for site delivery</li>
+        <li>AWS EKS Cluster with Terraform provisioning</li>
+        <li>Jenkins CI/CD with SonarQube security gates</li>
+        <li>Prometheus/Grafana monitoring stack</li>
+        <li>ArgoCD for GitOps deployments</li>
+        <li>Vault integration for secrets management</li>
       </ul>
-      <a href="https://github.com/AmanPathak-DevOps/End-to-End-Kubernetes-Three-Tier-DevSecOps-Project" target="_blank" class="btn btn-outline-dark mt-3">View GitHub Repository</a>
+      <a href="https://github.com/rahulindi/End-to-End-Kubernetes-Three-Tier-DevSecOps-Project" 
+         target="_blank" 
+         class="btn btn-outline-dark mt-3">
+         View GitHub Repository
+      </a>
     </div>
   </section>
 
@@ -109,7 +122,9 @@
     <div class="container text-center">
       <h2>Architecture Diagram</h2>
       <div class="diagram mt-4">
-        <img src="https://raw.githubusercontent.com/AmanPathak-DevOps/End-to-End-Kubernetes-Three-Tier-DevSecOps-Project/main/ArchitectureDiagram/Three-Tier-Architecture.drawio.png" alt="Architecture Diagram">
+        <img src="architecture-diagram.png" 
+             alt="Three-Tier Kubernetes Architecture"
+             data-aos="zoom-in">
       </div>
     </div>
   </section>
@@ -117,53 +132,61 @@
   <!-- Tools Used -->
   <section id="tools" data-aos="fade-up">
     <div class="container">
-      <h2>Tools & Tech Stack</h2>
+      <h2>DevSecOps Toolchain</h2>
       <div class="tools-grid">
         <div class="tool">
-          <img src="https://get.jenkins.io/art/jenkins-logo/256x256/logo.png" alt="Jenkins">
-          <p>Jenkins</p>
-        </div>
-        <div class="tool">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg" alt="Kubernetes">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes">
           <p>Kubernetes</p>
         </div>
         <div class="tool">
-          <img src="https://cdn.iconscout.com/icon/free/png-256/aws-1869025-1583149.png" alt="AWS">
-          <p>AWS</p>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" alt="Terraform">
+          <p>Terraform</p>
         </div>
         <div class="tool">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Prometheus_software.svg" alt="Prometheus">
-          <p>Prometheus</p>
-        </div>
-        <div class="tool">
-          <img src="https://www.sonarsource.com/images/press/sonarqube-logo-dark.svg" alt="SonarQube">
-          <p>SonarQube</p>
-        </div>
-        <div class="tool">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Grafana_logo.svg" alt="Grafana">
-          <p>Grafana</p>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="Jenkins">
+          <p>Jenkins</p>
         </div>
         <div class="tool">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/argocd/argocd-original.svg" alt="ArgoCD">
           <p>ArgoCD</p>
         </div>
         <div class="tool">
-          <img src="https://www.terraform.io/assets/images/logo-hashicorp-terraform-0d2a76e0b48b8a5204ab0e46371644eb.svg" alt="Terraform">
-          <p>Terraform</p>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg" alt="Prometheus">
+          <p>Prometheus</p>
+        </div>
+        <div class="tool">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg" alt="Grafana">
+          <p>Grafana</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" class="bg-light" data-aos="fade-up">
+  <!-- AWS Credit Section -->
+  <section id="aws-credit" class="bg-light" data-aos="fade-up">
     <div class="container">
-      <h2>Contact</h2>
+      <h2>AWS Rapid Ramp Credit Request</h2>
+      <p>
+        Seeking $300 AWS credits to:
+      </p>
+      <ul>
+        <li>Implement advanced EKS security configurations</li>
+        <li>Develop disaster recovery strategies</li>
+        <li>Build multi-region deployment pipelines</li>
+        <li>Test cost-optimization strategies at scale</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" data-aos="fade-up">
+    <div class="container">
+      <h2>Connect With Me</h2>
       <ul class="list-unstyled contact-list">
-        <li>Email: <a href="mailto:rahulindi@codetocloud.tech">rahulindi@codetocloud.tech</a></li>
-        <li>Website: <a href="https://codetocloud.tech" target="_blank">codetocloud.tech</a></li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/rahul-indi-b1932375/" target="_blank">linkedin.com/in/rahul-indi-b1932375</a></li>
-        <li>GitHub Project: <a href="https://github.com/AmanPathak-DevOps/End-to-End-Kubernetes-Three-Tier-DevSecOps-Project" target="_blank">View Repository</a></li>
+        <li>📧 <a href="mailto:rahulindi@codetocloud.tech">rahulindi@codetocloud.tech</a></li>
+        <li>🌐 <a href="https://codetocloud.tech" target="_blank">codetocloud.tech</a></li>
+        <li>💼 <a href="https://www.linkedin.com/in/rahul-indi-b1932375/" target="_blank">LinkedIn Profile</a></li>
+        <li>🐙 <a href="https://github.com/rahulindi/End-to-End-Kubernetes-Three-Tier-DevSecOps-Project" target="_blank">Project Repository</a></li>
       </ul>
     </div>
   </section>
@@ -172,7 +195,11 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script>
-    AOS.init({ duration: 800, once: true });
+    AOS.init({
+      duration: 800,
+      once: true,
+      offset: 120
+    });
   </script>
 
 </body>
