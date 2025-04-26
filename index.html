@@ -295,3 +295,30 @@
 
 </body>
 </html>
+
+ <!-- Footer Section -->
+  <footer style="padding: 30px; background-color: #f8f9fa; text-align: center; margin-top: 50px;">
+    <div style="color: #4b5563; font-size: 14px;">
+      <p style="margin: 0;">
+        &copy; <span id="current-year"></span> Designed & Built by Rahul Indi
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    // Existing AOS initialization
+    AOS.init({
+      duration: 800,
+      once: true,
+      offset: 120
+    });
+
+    // Add current year dynamically
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
