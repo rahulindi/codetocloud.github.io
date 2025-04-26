@@ -94,7 +94,18 @@
 </section>
 
 
-  <!-- Project Overview -->
+ <style>
+.highlight {
+  color: #000000;  /* Changed from #FF0076 to black */
+  font-weight: 600;
+  background-color: #f8f9fa;  /* Added light background for contrast */
+  padding: 2px 8px;
+  border-radius: 4px;
+  display: inline-block;
+}
+</style>
+
+<!-- Project Overview Section -->
 <section id="project" data-aos="fade-up">
   <div class="container">
     <h2>Three-Tier DevSecOps Implementation</h2>
@@ -118,6 +129,23 @@
         </ul>
       </div>
     </div>
+
+    <h4 class="mt-4 highlight">DevOps Pipeline Flow</h4>
+    <div class="alert alert-light border">
+      1. Code Commit → 2. SAST Scanning → 3. Docker Build →<br>
+      4. Kubernetes Deployment → 5. Smoke Testing →<br>
+      6. Monitoring → 7. Feedback Loop
+    </div>
+
+    <h4 class="highlight mt-4">Security Implementation</h4>
+    <ul>
+      <li>OWASP Top 10 vulnerability prevention</li>
+      <li>Role-Based Access Control (RBAC)</li>
+      <li>Secrets management with Vault</li>
+      <li>Network policies for pod communication</li>
+    </ul>
+  </div>
+</section>
 
     <h4 class="mt-4 highlight">DevOps Pipeline Flow</h4>
     <div class="alert alert-dark">
